@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-music"></i> Top 10 Songs</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+        <div class="songs" id="id">
+            <ul>
+                <li><label>#1</label>Superstition</li>
+                <li><label>#3</label>Run the World (Girls)</li>
+                <li><label>#5</label>Fast Car</li>
+                <li><label>#7</label>You Don't Own Me</li>
+                <li><label>#9</label>Jolene</li>
+                <li><label>#11</label>Paper Plane</li>
+            </ul>
+
+            <ul>
+                <li><label>#2</label>Call Me</li>
+                <li><label>#4</label>I Put a Spell on You</li>
+                <li><label>#6</label>Heroes</li>
+                <li><label>#8</label>Wish You Were Here</li>
+                <li><label>#10</label>O-o-oh Child</li>
+                <li><label>#12</label>Time to Pretend</li>
+            </ul>
+
+            
+        </div>
+        <button onclick="myFunction()" id="btn">Show Me !</button>
+
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("id");
+          var btn = document.getElementById("btn");
+         
+          if (x.style.display === "none") {
+            x.style.display = "grid";
+          } else if(x.style.display === "") {
+            x.style.display = "grid";
+          }else{
+            x.style.display = "none";
+          }
+          
+          if (btn.textContent=="Show Me !") btn.textContent = "Hide Me !";
+             else btn.textContent = "Show Me !";
+        }
+          
+        </script>
+    
+</body>
+</html>
